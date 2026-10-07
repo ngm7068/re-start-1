@@ -6,6 +6,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build --outDir dist/firefox",
+        "build:web": "vite build --outDir dist/web",
         "build:firefox": "vite build --outDir dist/firefox",
         "build:chrome": "vite build --outDir dist/chrome",
         "build:chrome:prod": "CLIENT_ENV=prod vite build --outDir dist/chrome",

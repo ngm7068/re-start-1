@@ -29,6 +29,10 @@ features:
 2. click "Add to [Browser]".
 3. make sure to click "Add extension" and "Keep it" when prompted.
 
+### website
+
+re-start can also be hosted as a regular website. Import this repository into Vercel and deploy with the included `vercel.json`, or run `npm run build:web` and host the contents of `dist/web` on any static hosting provider. Settings and local tasks are saved in the current browser; Todoist is also available. Google Tasks requires the Chrome extension and is not available on the website.
+
 ## usage tips/info
 
 - settings

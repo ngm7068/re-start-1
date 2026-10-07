@@ -18,6 +18,10 @@ export function buildManifest() {
             delete bundle['manifest.json']
         },
         closeBundle() {
+            if (!outDir.endsWith('chrome') && !outDir.endsWith('firefox')) {
+                return
+            }
+
             const browser = outDir.includes('chrome') ? 'chrome' : 'firefox'
             const manifest = JSON.parse(
                 fs.readFileSync('./public/manifest.json', 'utf-8')
